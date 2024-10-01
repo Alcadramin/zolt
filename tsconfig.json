@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "ES2015",
+    "module": "ES2015",
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+    "declaration": true,
+    "allowJs": true,
+    "checkJs": true,
+    "moduleResolution": "Node"
+  },
+  "include": ["zolt.js"]
+}

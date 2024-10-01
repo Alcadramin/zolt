@@ -1,0 +1,61 @@
+{
+  "name": "zolt",
+  "version": "1.0.0",
+  "description": "A CLI spinner that doesn't suck.",
+  "main": "dist/zolt.cjs.js",
+  "module": "dist/zolt.mjs",
+  "types": "dist/zolt.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/zolt.cjs.js",
+      "import": "./dist/zolt.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rimraf dist/* && node esbuild.config.js",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Alcadramin/zolt.git"
+  },
+  "keywords": [
+    "cli",
+    "spinner",
+    "spinners",
+    "terminal",
+    "term",
+    "console",
+    "ascii",
+    "unicode",
+    "loading",
+    "indicator",
+    "progress",
+    "busy",
+    "wait",
+    "idle",
+    "ora"
+  ],
+  "author": "Alcadramin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alcadramin/zolt/issues"
+  },
+  "homepage": "https://github.com/Alcadramin/zolt#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.11.1",
+    "@types/node": "^22.7.4",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.11.1",
+    "globals": "^15.10.0",
+    "husky": "^9.1.6",
+    "rimraf": "^6.0.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^5.6.2"
+  }
+}
