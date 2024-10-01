@@ -13,14 +13,14 @@
   </a>
 </p>
 
-## Zolt - The CLI Spinner That Doesn't Suck (Unlike the Others)
+## Zolt - The CLI Spinner That Doesn't Suck
 
 ### Why Zolt?!
 
 Look, we get it. You've used **Ora** and a thousand other spinners with a million dependencies. Do you _really_ need half the npm registry installed just to show a couple of spinning dots? **Zolt** is here to save you (and your poor hard drive).
 
 - **No dependencies.** That’s right, Zolt runs without dragging in 500 packages you’ll never care about.
-- **5KB of pure, unadulterated performance.** Yep, just 5KB! Smaller than your average tweet.
+- **1KB of pure, unadulterated performance.** Yep, just 1KB! Smaller than your average tweet.
 - **CommonJS AND ESModules.** We’re fancy like that.
 
 So if you’re tired of bloated spinners that make you question why you even needed one in the first place, give Zolt a spin (pun intended).
@@ -74,7 +74,7 @@ Zolt is simple, because you don’t need a PhD to understand a spinner.
 
 1. **Minimalism at its finest** – No need to clutter your project with useless dependencies just to show some spinning dots.
 2. **Compatible with your lifestyle** – Whether you’re a CommonJS traditionalist or an ESModule futurist, Zolt doesn’t judge.
-3. **Tiny, but mighty** – 5KB of functionality. You’ve probably written longer commit messages.
+3. **Tiny, but mighty** – 1KB of functionality. You’ve probably written longer commit messages.
 4. **Dependability without dependencies** – Zolt spins, stops, and keeps your terminal looking clean. That’s it. Simple, reliable, no drama.
 
 ---

@@ -5,7 +5,7 @@ const options = {
   entryPoints: ['zolt.js'],
   bundle: true,
   minify: true,
-  sourcemap: true,
+  sourcemap: false,
   target: ['esnext'],
   platform: 'node',
 };
