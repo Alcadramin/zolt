@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "build": "rimraf dist/* && node esbuild.config.js",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
