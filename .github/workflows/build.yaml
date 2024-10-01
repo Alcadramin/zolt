@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: Setup Node.js ${{ matrix.node-version }}
+    name: With Node.js ${{ matrix.node-version }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
