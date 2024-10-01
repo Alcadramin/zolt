@@ -17,11 +17,11 @@
 
 ### Why Zolt?!
 
-Look, we get it. You've used **Ora** and a thousand other spinners with a million dependencies. Do you _really_ need half the npm registry installed just to show a couple of spinning dots? **Zolt** is here to save you (and your poor hard drive).
+Look, we get it. You've used **Ora** and a thousand other spinners with a million dependencies. Do you _really_ need half the npm registry installed just to show a couple of spinning dots? **Zolt** ⚡ is here to save you (and your poor hard drive).
 
-- **No dependencies.** That’s right, Zolt runs without dragging in 500 packages you’ll never care about.
 - **1KB of pure, unadulterated performance.** Yep, just 1KB! Smaller than your average tweet.
 - **CommonJS AND ESModules.** We’re fancy like that.
+- **No dependencies.** That’s right, Zolt runs without dragging in 500 packages you’ll never care about.
 
 So if you’re tired of bloated spinners that make you question why you even needed one in the first place, give Zolt a spin (pun intended).
 
@@ -77,8 +77,8 @@ Zolt is simple, because you don’t need a PhD to understand a spinner.
 3. **Tiny, but mighty** – 1KB of functionality. You’ve probably written longer commit messages.
 4. **Dependability without dependencies** – Zolt spins, stops, and keeps your terminal looking clean. That’s it. Simple, reliable, no drama.
 
----
-
 Enjoy spinning, and remember, if your spinner has dependencies, it’s not Zolt.
 
----
+## License
+
+This repository is licensed under the [MIT](LICENSE.md) License.
