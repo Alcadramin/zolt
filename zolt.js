@@ -1,8 +1,10 @@
 /**
- * A CLI spinner that doesn't suck.
+ * The CLI spinner that doesn't suck
  */
 class Zolt {
-  #spinnerFrames = {
+  interval;
+  currentFrame = 0;
+  spinnerFrames = {
     dots: {
       frames: ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'],
       speed: 100
@@ -20,23 +22,22 @@ class Zolt {
       speed: 75
     }
   };
-  #interval;
-  #currentFrame = 0;
 
   /**
    * Start the spinner.
    * @param {('dots'|'bars'|'arrows'|'bounce')} [mode='dots'] - Spinner mode.
-   * @param {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'brightBlack'|'brightRed'|'brightGreen'|'brightYellow'|'brightBlue'|'brightMagenta'|'brightCyan'|'brightWhite'|'reset')} [color='reset'] - Color of the spinner (supports predefined 32 color codes).   * @param {string} [text=''] - Text to display next to the spinner.
+   * @param {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'brightBlack'|'brightRed'|'brightGreen'|'brightYellow'|'brightBlue'|'brightMagenta'|'brightCyan'|'brightWhite'|'reset')} [color='reset'] - Color of the spinner (supports predefined 32 color codes).
+   * @param {string} [text=''] - Text to display next to the spinner.
    */
   static start(mode = 'dots', color = 'reset', text = '') {
-    const spinner = new Zolt(); // Use an instance to keep track of frames.
-    const { frames, speed } = spinner.#spinnerFrames[mode];
-    const colorCode = spinner.#getColorCode(color);
+    const spinner = new Zolt();
+    const { frames, speed } = spinner.spinnerFrames[mode];
+    const colorCode = spinner.getColorCode(color);
 
-    spinner.#interval = setInterval(() => {
-      const frame = frames[spinner.#currentFrame];
+    spinner.interval = setInterval(() => {
+      const frame = frames[spinner.currentFrame];
       process.stdout.write(`\r${colorCode}${frame} ${text}\x1b[0m`);
-      spinner.#currentFrame = (spinner.#currentFrame + 1) % frames.length;
+      spinner.currentFrame = (spinner.currentFrame + 1) % frames.length;
     }, speed);
 
     this.spinnerInstance = spinner;
@@ -48,14 +49,14 @@ class Zolt {
    */
   static stop(callback) {
     if (this.spinnerInstance) {
-      clearInterval(this.spinnerInstance.#interval);
+      clearInterval(this.spinnerInstance.interval);
       process.stdout.write('\r\x1b[K');
 
       if (typeof callback === 'function') {
         callback();
       }
 
-      delete this.spinnerInstance; // Cleanup
+      delete this.spinnerInstance;
     }
   }
 
@@ -64,7 +65,7 @@ class Zolt {
    * @param {string} color - The color name.
    * @returns {string} The ANSI color code.
    */
-  #getColorCode(color) {
+  getColorCode(color) {
     const colors = {
       black: '\x1b[30m',
       red: '\x1b[31m',
