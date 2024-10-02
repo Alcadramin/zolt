@@ -12,6 +12,11 @@
       "section": "Bug Fixes"
     },
     {
+      "type": "test",
+      "section": "Tests",
+      "hidden": false
+    },
+    {
       "type": "chore",
       "section": "Chores",
       "hidden": false
