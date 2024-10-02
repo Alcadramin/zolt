@@ -62,7 +62,7 @@ Zolt is simple, because you don’t need a PhD to understand a spinner.
 
 ### `Zolt.start([mode], [color], [text])`
 
-- **mode** (`'dots' | 'bars'`): The style of the spinner. Because we know you want options, even if it's just two.
+- **mode** (`'dots' | 'bars' | 'arrows' | 'bounce'`): The style of the spinner. Because we know you want options.
 - **color** (`'black' | 'red' | 'green' | 'yellow' | 'blue' | 'magenta' | 'cyan' | 'white' | 'brightBlack' | 'brightRed' | 'brightGreen' | 'brightYellow' | 'brightBlue' | 'brightMagenta' | 'brightCyan' | 'brightWhite'`): Pick a color, any color! Or just leave it if you're too indecisive.
 - **text** (`string`): The _optional_ text you want next to your spinner. Could be “Loading…” or your existential crisis, whatever suits the mood.
 
