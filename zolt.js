@@ -5,12 +5,16 @@ class Zolt {
   #spinnerFrames = {
     dots: {
       frames: ['⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏'],
-      speed: 100,
+      speed: 100
     },
     bars: {
       frames: ['|', '/', '-', '\\'],
-      speed: 150,
+      speed: 150
     },
+    arrows: {
+      frames: ['↑', '↗', '→', '↘', '↓', '↙', '←', '↖'],
+      speed: 150
+    }
   };
   #interval;
   #currentFrame = 0;
@@ -18,7 +22,8 @@ class Zolt {
   /**
    * Start the spinner.
    * @param {('dots'|'bars')} [mode='dots'] - Spinner mode: 'dots' or 'bars'.
-   * @param {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'brightBlack'|'brightRed'|'brightGreen'|'brightYellow'|'brightBlue'|'brightMagenta'|'brightCyan'|'brightWhite'|'reset')} [color='reset'] - Color of the spinner (supports predefined 32 color codes).   * @param {string} [text=''] - Text to display next to the spinner.
+   * @param {('black'|'red'|'green'|'yellow'|'blue'|'magenta'|'cyan'|'white'|'brightBlack'|'brightRed'|'brightGreen'|'brightYellow'|'brightBlue'|'brightMagenta'|'brightCyan'|'brightWhite'|'reset')} [color='reset'] - Color of the spinner (supports predefined 32 color codes).
+   * @param {string} [text=''] - Text to display next to the spinner.
    */
   static start(mode = 'dots', color = 'reset', text = '') {
     const spinner = new Zolt(); // Use an instance to keep track of frames.
@@ -74,7 +79,7 @@ class Zolt {
       brightBlue: '\x1b[94m',
       brightMagenta: '\x1b[95m',
       brightCyan: '\x1b[96m',
-      brightWhite: '\x1b[97m',
+      brightWhite: '\x1b[97m'
     };
 
     return colors[color] || colors.reset;
