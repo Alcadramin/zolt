@@ -17,7 +17,7 @@ test.serial('start method should initiate spinner and update frame', async t => 
   t.truthy(Zolt.spinnerInstance);
   t.is(Zolt.spinnerInstance.currentFrame, 0);
   
-  await new Promise(resolve => setTimeout(resolve, 200));
+  await new Promise(resolve => setTimeout(resolve, 100));
   
   t.is(Zolt.spinnerInstance.currentFrame, 1);
   Zolt.stop();

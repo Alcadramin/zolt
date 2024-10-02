@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Alcadramin/zolt/compare/v1.0.1...v1.1.0) (2024-10-02)
+
+
+### Features
+
+* added arrows mode ([80e1284](https://github.com/Alcadramin/zolt/commit/80e1284b7ef2cb72fc96626eae53d1cdf451d7c3))
+* added bounce mode ([be817ac](https://github.com/Alcadramin/zolt/commit/be817ac0512ff25e9ae220efbc8993ece12cf5e4))
+* make properties public for tests ([261ffa8](https://github.com/Alcadramin/zolt/commit/261ffa8ff3d0fd8caa70a336695e5f5d2ae58e39))
+
+
+### Tests
+
+* added unit tests ([fabb08e](https://github.com/Alcadramin/zolt/commit/fabb08e9f51314d99d514f7f0be2474e11575459))
+
+
+### Chores
+
+* **ci:** setup tests ([5d8f189](https://github.com/Alcadramin/zolt/commit/5d8f189ce92f6cfc7939169e39757bbbc96188bf))
+* **ci:** upgrade pnpm action ([84e8530](https://github.com/Alcadramin/zolt/commit/84e8530eec8adddacb1ab835596c2342fd65edc2))
+
 ### [1.0.1](https://github.com/Alcadramin/zolt/compare/v1.0.0...v1.0.1) (2024-10-01)
 
 
