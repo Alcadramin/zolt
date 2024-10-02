@@ -2,8 +2,8 @@
   <img src="https://storage.googleapis.com/engineerhub-static/zolt.png?v=1" alt="Zolt" />
 </p>
 <p align="center">
-  <a href="https://github.com/Alcadramin/zolt/actions/workflows/build.yaml" target="_blank">
-    <img src="https://github.com/Alcadramin/zolt/actions/workflows/build.yaml/badge.svg?branch=main" alt="Build Status"/>
+  <a href="https://github.com/Alcadramin/zolt/actions/workflows/ci.yaml" target="_blank">
+    <img src="https://github.com/Alcadramin/zolt/actions/workflows/ci.yaml/badge.svg?branch=main" alt="Build Status"/>
   </a>
   <a href="https://github.com/Alcadramin/zolt/issues" target="_blank">
     <img src="https://img.shields.io/github/issues/Alcadramin/zolt" />

@@ -1,4 +1,4 @@
-name: Build
+name: Build and Test Zolt
 
 on:
   - push
@@ -28,3 +28,5 @@ jobs:
         run: pnpm install
       - name: Build the project
         run: pnpm run build
+      - name: Run tests
+        run: pnpm test
