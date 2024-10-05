@@ -8,8 +8,8 @@
   <a href="https://github.com/Alcadramin/zolt/issues" target="_blank">
     <img src="https://img.shields.io/github/issues/Alcadramin/zolt" />
   </a>
-  <a href="https://github.com/Alcadramin/zolt/blob/main/LICENSE.md" target="_blank">
-    <img src="https://img.shields.io/github/license/Alcadramin/zolt" />
+  <a href="https://codecov.io/gh/Alcadramin/zolt" target="_blank">
+     <img src="https://codecov.io/gh/Alcadramin/zolt/graph/badge.svg?token=b8OKOUqFbx"/> 
   </a>
 </p>
 
