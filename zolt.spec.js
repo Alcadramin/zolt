@@ -33,6 +33,16 @@ test.serial('stop method should stop the spinner and clear the line', async t =>
   t.true(writeOutput.includes('\r\x1b[K'));
 });
 
+test.serial('stop callback exuction', async t => {
+  let cb = null;
+  Zolt.start();
+
+  await new Promise(resolve => setTimeout(resolve, 100));
+  Zolt.stop(() => cb = true);
+
+  t.deepEqual(cb, true);
+})
+
 test.serial('getColorCode method should return correct ANSI color code', t => {
   const spinner = new Zolt();
   t.is(spinner.getColorCode('green'), '\x1b[32m');
